@@ -7,7 +7,7 @@
 import templateMaker from '../../helpers/templateMaker';
 
 const htmls = {
-    HTML_DEFAULT_TEMPLATE: '<div class="tui-chart-default-tooltip">' +
+    HTML_DEFAULT_TEMPLATE: '<div class="tui-chart-default-tooltip" id="tooltip">' +
         '<div class="tui-chart-tooltip-head {{ categoryVisible }}">{{ category }}</div>' +
         '<div class="tui-chart-tooltip-body">' +
             '<span class="tui-chart-legend-rect {{ chartType }}" style="{{ cssText }}"></span>' +
@@ -25,7 +25,7 @@ const htmls = {
         '</div>' +
     '</div>',
 
-    HTML_COORDINATE_TYPE_CHART_TEMPLATE: '<div class="tui-chart-default-tooltip">' +
+    HTML_COORDINATE_TYPE_CHART_TEMPLATE: '<div class="tui-chart-default-tooltip" id="tooltip">' +
         '<div class="tui-chart-tooltip-head {{ categoryVisible }}">' +
             '<span class="tui-chart-legend-rect {{ chartType }}" style="{{ cssText }}"></span>' +
             '{{ category }}' +

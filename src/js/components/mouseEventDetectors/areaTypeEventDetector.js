@@ -189,12 +189,31 @@ class AreaTypeEventDetector extends MouseEventDetectorBase {
         this.prevFoundData = foundData;
     }
 
+    _isTooltipArea(ev) {
+        let eventObj = ev;
+        let res = false;
+        while (eventObj) {
+            if (eventObj.id === 'tooltip') {
+                res = true;
+                break;
+            }
+            eventObj = eventObj.parentNode;
+        }
+
+        return res;
+    }
+
     /**
      * On mouseout.
      * @private
      * @override
      */
-    _onMouseout() {
+    _onMouseout(ev) {
+        // @TODO: tooltip 위에 있어도 마우스 이벤트가 paper 위에서 처럼 작동해야함
+        if (this._isTooltipArea(ev.relatedTarget)) {
+            return;
+        }
+
         if (this.prevFoundData) {
             this._hideTooltip();
         }
