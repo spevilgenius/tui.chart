@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /**
  * @fileoverview Series base component.
  * @author NHN.
@@ -265,7 +267,7 @@ class Series {
      * @private
      * @abstract
      */
-    _makeSeriesData() {}
+    _makeSeriesData() { }
 
     /**
      * Get seriesData
@@ -280,7 +282,7 @@ class Series {
      * @private
      * @abstract
      */
-    _renderSeriesLabel() {}
+    _renderSeriesLabel() { }
 
     /**
      * Render series label area

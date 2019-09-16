@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /**
  * @fileoverview chart.js is entry point of Toast UI Chart.
  * @author NHN.
@@ -77,6 +79,8 @@ import './themes/defaultThemesRegistration';
  * @private
  * @ignore
  */
+
+// eslint-disable-next-line require-jsdoc
 function _createChart(container, rawData = {}, options, chartType) {
     if (rawData.table) {
         rawData = seriesDataImporter.makeDataWithTable(rawData.table);
@@ -367,6 +371,7 @@ function columnChart(container, rawData, options) {
  *          @param {string} options.xAxis.prefix - prefix for xAxis
  *          @param {string} options.xAxis.suffix - suffix for xAxis
  *      @param {object} options.series - options for series component
+ *          @param {number} options.series.lineWidth - width of line
  *          @param {boolean} options.series.showDot - whether show dot or not
  *          @param {boolean} options.series.showLabel - whether show label or not
  *          @param {boolean} options.series.allowSelect - whether allow select or not
@@ -1009,9 +1014,10 @@ function treemapChart(container, rawData, options) {
  *              @param {number} options.series.column.barWidth - bar width
  *          @param {?object} options.series.line - options for line series component
  *              @param {boolean} options.series.line.showDot - whether show dot or not
+ *              @param {number} options.series.line.lineWidth - line width
  *              @param {boolean} options.series.line.showLabel - whether show label or not
  *              @param {boolean} options.series.line.spline - whether spline or not
- *          @param {?object} options.series.area - options for line series component
+ *          @param {?object} options.series.area - options for are series component
  *              @param {boolean} options.series.area.showDot - whether show dot or not
  *              @param {boolean} options.series.area.showLabel - whether show label or not
  *              @param {boolean} options.series.area.spline - whether spline or not

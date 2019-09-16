@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * @fileoverview Column and Line Combo chart.
  * @author NHN.

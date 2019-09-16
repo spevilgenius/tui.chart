@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * @fileoverview Calculator for dimension of legend.
  * @author NHN.
@@ -200,7 +201,7 @@ export default {
         ]);
 
         const legendHeight = ((labelItemHeightWithPaddingTop * dividedLabels.length) - chartConst.LINE_MARGIN_TOP
-             + chartConst.SERIES_AREA_V_PADDING);
+            + chartConst.SERIES_AREA_V_PADDING);
 
         return legendHeight;
     },
@@ -234,6 +235,7 @@ export default {
      * @param {Array.<string>} legendLabels - labels for legend
      * @param {number} checkboxWidth - width for checkbox
      * @param {?number} [maxWidth] - user option legend maxWidth
+     * @param {?number} [Width] - user option for actual legend width and overrides calculations
      * @returns {{width: (number)}}
      * @private
      */
@@ -262,13 +264,14 @@ export default {
 
     /**
      * Calculate legend dimension.
-     * @param {{showCheckbox: boolean, visible: boolean, align: string}} options - options for legend
+     * @param {{showCheckbox: boolean, visible: boolean, align: string, width: number}} options - options for legend
      * @param {{fontSize: number, fontFamily: number}} labelTheme - label theme for legend
      * @param {Array.<string>} legendLabels - labels for legend
      * @param {number} chartWidth chart width
      * @returns {{width: number, height: number}}
      */
     calculate(options, labelTheme, legendLabels, chartWidth) {
+        // console.log('CALCULATING LEGEND WIDTH');
         const checkboxWidth = options.showCheckbox === false ? 0 : LEGEND_CHECKBOX_SIZE + LEGEND_LABEL_LEFT_PADDING;
         const {maxWidth} = options;
         let dimension = {};
@@ -279,9 +282,15 @@ export default {
             dimension = this._makeHorizontalDimension(
                 labelTheme, legendLabels, chartWidth, checkboxWidth, maxWidth
             );
+        } else if (options.width && options.width > 0) {
+            // console.log('WIDTH SET');
+            dimension.height = 0;
+            dimension.width = options.width;
         } else {
+            // console.log('NO WIDTH SET');
             dimension = this._makeVerticalDimension(labelTheme, legendLabels, checkboxWidth, maxWidth);
         }
+        // console.log(`LEGEND WIDTH: ${dimension.width}`);
 
         return dimension;
     }

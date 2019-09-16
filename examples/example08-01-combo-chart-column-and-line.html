@@ -8,12 +8,15 @@
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/codemirror.css'/>
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/lint/lint.css'/>
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/theme/neo.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='./css/example.css'/>
 </head>
 <body>
 <div class='wrap'>
     <div class='code-html' id='code-html'>
         <div id='chart-area'></div>
+        <br/>
+        <div id='chart-area2'></div>
     </div>
     <div class='custom-area'>
         <div id='error-dim'>
@@ -37,6 +40,7 @@
 <script src='../dist/tui-chart.js'></script>
 <script class='code-js' id='code-js'>
 var container = document.getElementById('chart-area');
+var container2 = document.getElementById('chart-area2');
 var data = {
     categories: ['Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct'],
     series: {
@@ -110,6 +114,7 @@ var theme = {
 // tui.chart.registerTheme('myTheme', theme);
 // options.theme = 'myTheme';
 var chart = tui.chart.comboChart(container, data, options);
+var chart2 = tui.chart.comboChart(container2, data, options);
 </script>
 <!--For tutorial page-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/codemirror.js'></script>

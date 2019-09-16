@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /**
  * @fileoverview Bar chart.
  * @author NHN.

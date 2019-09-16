@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /**
  * @fileoverview ChartBase
  * @author NHN.
@@ -134,7 +136,8 @@ class ChartBase {
             indexes: {
                 groupIndex,
                 index
-            }}, shouldSelect);
+            }
+        }, shouldSelect);
     }
 
     /**
@@ -304,14 +307,14 @@ class ChartBase {
      * @abstract
      * @ignore
      */
-    addComponents() {}
+    addComponents() { }
 
     /**
      * Get scale option.
      * @abstract
      * @ignore
      */
-    getScaleOption() {}
+    getScaleOption() { }
 
     /**
      * Build bounds and scale data.
@@ -374,7 +377,7 @@ class ChartBase {
      * @abstract
      * @ignore
      */
-    addDataRatios() {}
+    addDataRatios() { }
 
     /**
      * Make chart ready for render, it should be invoked before render, rerender, resize and zoom.
@@ -828,31 +831,31 @@ class ChartBase {
      * Add data.
      * @abstract
      */
-    addData() {}
+    addData() { }
 
     /**
      * Add plot line.
      * @abstract
      */
-    addPlotLine() {}
+    addPlotLine() { }
 
     /**
      * Add plot band.
      * @abstract
      */
-    addPlotBand() {}
+    addPlotBand() { }
 
     /**
      * Remove plot line.
      * @abstract
      */
-    removePlotLine() {}
+    removePlotLine() { }
 
     /**
      * Remove plot band.
      * @abstract
      */
-    removePlotBand() {}
+    removePlotBand() { }
 
     /**
      * Get series item bound by indexes

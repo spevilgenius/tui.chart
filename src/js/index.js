@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 import {pluginRaphael, callback} from './plugins/pluginRaphael';
 import chart from './chart';
 import renderUtil from './helpers/renderUtil';

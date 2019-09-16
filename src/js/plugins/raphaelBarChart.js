@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /**
  * @fileoverview Raphael bar chart renderer.
  * @author NHN.

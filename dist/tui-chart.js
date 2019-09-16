@@ -4,8 +4,8 @@
  * @author NHN. FE Development Lab <dl_javascript@nhn.com>
  * @version 3.7.0
  * @license MIT
- * @link https://github.com/nhn/tui.chart
- * bundle created at "Tue Apr 23 2019 10:58:50 GMT+0900 (대한민국 표준시)"
+ * @link https://github.com/spevilgenius/tui.chart
+ * bundle created at "Fri Jul 19 2019 08:12:22 GMT-0400 (Eastern Daylight Time)"
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -95,6 +95,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
+	/* eslint-disable complexity */
 	_chart2['default'].registerPlugin('Raphael', _pluginRaphael.pluginRaphael, _pluginRaphael.callback);
 	
 	_chart2['default'].renderUtil = _renderUtil2['default'];
@@ -206,11 +207,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    radialPlot: _raphaelRadialPlot2['default'],
 	    title: _raphaelTitleComponent2['default'],
 	    axis: _raphaelAxisComponent2['default']
-	}; /**
-	    * @fileoverview Raphael render plugin.
-	    * @author NHN.
-	    *         FE Development Lab <dl_javascript@nhn.com>
-	    */
+	}; /* eslint-disable linebreak-style */
+	/**
+	 * @fileoverview Raphael render plugin.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var callback = exports.callback = function callback(container, dimension) {
 	    var paper = (0, _raphael2['default'])(container, dimension.width, dimension.height);
@@ -365,11 +367,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-	                                                                                                                                                           * @fileoverview Raphael bar chart renderer.
-	                                                                                                                                                           * @author NHN.
-	                                                                                                                                                           *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                           */
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview Raphael bar chart renderer.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	
 	var ANIMATION_DURATION = 700;
@@ -1073,11 +1077,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var LINE_HEIGHT_FOR_CALCULATE = 1.11; /**
-	                                       * @fileoverview Util for raphael rendering.
-	                                       * @author NHN.
-	                                       *         FE Development Lab <dl_javascript@nhn.com>
-	                                       */
+	var LINE_HEIGHT_FOR_CALCULATE = 1.11; /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview Util for raphael rendering.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var storeForGetTextDimension = {
 	    cacheFontInfo: '',
@@ -1508,11 +1514,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } /**
-	                                                                                                                                                                                                     * @fileoverview Util for rendering.
-	                                                                                                                                                                                                     * @author NHN.
-	                                                                                                                                                                                                     *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                                                                     */
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } /* eslint-disable linebreak-style */
+	/**
+	 * @fileoverview Util for rendering.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var browser = _tuiCodeSnippet2['default'].browser;
 	
@@ -2368,6 +2375,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 	
 	exports.__esModule = true;
+	/* eslint-disable linebreak-style */
 	/**
 	 * @fileoverview Chart const
 	 * @author NHN.
@@ -4593,11 +4601,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @fileoverview Raphael line chart renderer.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author NHN.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview Raphael line chart renderer.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var EMPHASIS_OPACITY = 1;
 	var DE_EMPHASIS_OPACITY = 0.3;
@@ -5005,11 +5015,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-	                                                                                                                                                           * @fileoverview RaphaelLineTypeBase is base class for line type renderer.
-	                                                                                                                                                           * @author NHN.
-	                                                                                                                                                           *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                           */
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview RaphaelLineTypeBase is base class for line type renderer.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	
 	var browser = _tuiCodeSnippet2['default'].browser;
@@ -12447,39 +12459,41 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @private
 	 * @ignore
 	 */
+	
+	// eslint-disable-next-line require-jsdoc
 	function _createChart(container) {
-	  var rawData = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-	  var options = arguments[2];
-	  var chartType = arguments[3];
+	    var rawData = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	    var options = arguments[2];
+	    var chartType = arguments[3];
 	
-	  if (rawData.table) {
-	    rawData = _seriesDataImporter2['default'].makeDataWithTable(rawData.table);
-	  }
+	    if (rawData.table) {
+	        rawData = _seriesDataImporter2['default'].makeDataWithTable(rawData.table);
+	    }
 	
-	  if (!rawData.series) {
-	    rawData.series = [];
-	  }
+	    if (!rawData.series) {
+	        rawData.series = [];
+	    }
 	
-	  rawData = _objectUtil2['default'].deepCopy(rawData);
+	    rawData = _objectUtil2['default'].deepCopy(rawData);
 	
-	  if (chartType !== 'combo') {
-	    var temp = rawData.series;
-	    rawData.series = {};
-	    rawData.series[chartType] = temp;
-	  }
+	    if (chartType !== 'combo') {
+	        var temp = rawData.series;
+	        rawData.series = {};
+	        rawData.series[chartType] = temp;
+	    }
 	
-	  options = options ? _objectUtil2['default'].deepCopy(options) : {};
-	  options.chartType = chartType;
-	  options.theme = options.theme || _const2['default'].DEFAULT_THEME_NAME;
+	    options = options ? _objectUtil2['default'].deepCopy(options) : {};
+	    options.chartType = chartType;
+	    options.theme = options.theme || _const2['default'].DEFAULT_THEME_NAME;
 	
-	  var isColorByPoint = options.series && options.series.colorByPoint;
-	  var theme = _themeManager2['default'].get(options.theme, chartType, rawData.series, isColorByPoint);
-	  var chart = _chartFactory2['default'].get(options.chartType, rawData, theme, options);
+	    var isColorByPoint = options.series && options.series.colorByPoint;
+	    var theme = _themeManager2['default'].get(options.theme, chartType, rawData.series, isColorByPoint);
+	    var chart = _chartFactory2['default'].get(options.chartType, rawData, theme, options);
 	
-	  chart.render(container);
-	  chart.animateChart();
+	    chart.render(container);
+	    chart.animateChart();
 	
-	  return chart;
+	    return chart;
 	}
 	
 	/**
@@ -12585,6 +12599,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *     };
 	 * chart.barChart(container, rawData, options);
 	 */
+	/* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
 	/**
 	 * @fileoverview chart.js is entry point of Toast UI Chart.
 	 * @author NHN.
@@ -12592,7 +12608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	
 	function barChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BAR);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BAR);
 	}
 	
 	/**
@@ -12702,7 +12718,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.columnChart(container, rawData, options);
 	 */
 	function columnChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_COLUMN);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_COLUMN);
 	}
 	
 	/**
@@ -12747,6 +12763,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *          @param {string} options.xAxis.prefix - prefix for xAxis
 	 *          @param {string} options.xAxis.suffix - suffix for xAxis
 	 *      @param {object} options.series - options for series component
+	 *          @param {number} options.series.lineWidth - width of line
 	 *          @param {boolean} options.series.showDot - whether show dot or not
 	 *          @param {boolean} options.series.showLabel - whether show label or not
 	 *          @param {boolean} options.series.allowSelect - whether allow select or not
@@ -12827,7 +12844,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.lineChart(container, rawData, options);
 	 */
 	function lineChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_LINE);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_LINE);
 	}
 	
 	/**
@@ -12948,7 +12965,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.areaChart(container, rawData, options);
 	 */
 	function areaChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_AREA);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_AREA);
 	}
 	
 	/**
@@ -13066,7 +13083,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.bubbleChart(container, rawData, options);
 	 */
 	function bubbleChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BUBBLE);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BUBBLE);
 	}
 	
 	/**
@@ -13168,7 +13185,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.scatterChart(container, rawData, options);
 	 */
 	function scatterChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_SCATTER);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_SCATTER);
 	}
 	
 	/**
@@ -13256,7 +13273,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.heatmapChart(container, rawData, options);
 	 */
 	function heatmapChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_HEATMAP);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_HEATMAP);
 	}
 	
 	/**
@@ -13340,7 +13357,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.treemapChart(container, rawData, options);
 	 */
 	function treemapChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_TREEMAP);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_TREEMAP);
 	}
 	
 	/**
@@ -13389,9 +13406,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *              @param {number} options.series.column.barWidth - bar width
 	 *          @param {?object} options.series.line - options for line series component
 	 *              @param {boolean} options.series.line.showDot - whether show dot or not
+	 *              @param {number} options.series.line.lineWidth - line width
 	 *              @param {boolean} options.series.line.showLabel - whether show label or not
 	 *              @param {boolean} options.series.line.spline - whether spline or not
-	 *          @param {?object} options.series.area - options for line series component
+	 *          @param {?object} options.series.area - options for are series component
 	 *              @param {boolean} options.series.area.showDot - whether show dot or not
 	 *              @param {boolean} options.series.area.showLabel - whether show label or not
 	 *              @param {boolean} options.series.area.spline - whether spline or not
@@ -13493,7 +13511,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.comboChart(container, rawData, options);
 	 */
 	function comboChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_COMBO);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_COMBO);
 	}
 	
 	/**
@@ -13573,7 +13591,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.pieChart(container, rawData, options);
 	 */
 	function pieChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_PIE);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_PIE);
 	}
 	
 	/**
@@ -13641,7 +13659,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.mapChart(container, rawData, options);
 	 */
 	function mapChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_MAP);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_MAP);
 	}
 	
 	/**
@@ -13733,7 +13751,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 */
 	function radialChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_RADIAL);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_RADIAL);
 	}
 	
 	/**
@@ -13790,7 +13808,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.boxplotChart(container, rawData, options);
 	 */
 	function boxplotChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BOXPLOT);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BOXPLOT);
 	}
 	
 	/**
@@ -13833,7 +13851,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.bulletChart(container, data, options);
 	 */
 	function bulletChart(container, rawData, options) {
-	  return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BULLET);
+	    return _createChart(container, rawData, options, _const2['default'].CHART_TYPE_BULLET);
 	}
 	
 	/**
@@ -13933,7 +13951,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.registerTheme('newTheme', theme);
 	 */
 	function registerTheme(themeName, theme) {
-	  _themeManager2['default'].register(themeName, theme);
+	    _themeManager2['default'].register(themeName, theme);
 	}
 	
 	/**
@@ -13959,7 +13977,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * chart.registerMap('newMap', data);
 	 */
 	function registerMap(mapName, data) {
-	  _mapManager2['default'].register(mapName, data);
+	    _mapManager2['default'].register(mapName, data);
 	}
 	
 	/**
@@ -13976,28 +13994,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * tui.chart.registerPlugin('raphael', pluginRaphael);
 	 */
 	function registerPlugin(libType, plugin, getPaperCallback) {
-	  _pluginFactory2['default'].register(libType, plugin);
-	  _drawingToolPicker2['default'].addRendererType(libType, getPaperCallback);
+	    _pluginFactory2['default'].register(libType, plugin);
+	    _drawingToolPicker2['default'].addRendererType(libType, getPaperCallback);
 	}
 	
 	module.exports = {
-	  barChart: barChart,
-	  columnChart: columnChart,
-	  lineChart: lineChart,
-	  areaChart: areaChart,
-	  bubbleChart: bubbleChart,
-	  scatterChart: scatterChart,
-	  heatmapChart: heatmapChart,
-	  treemapChart: treemapChart,
-	  comboChart: comboChart,
-	  pieChart: pieChart,
-	  mapChart: mapChart,
-	  radialChart: radialChart,
-	  boxplotChart: boxplotChart,
-	  bulletChart: bulletChart,
-	  registerTheme: registerTheme,
-	  registerMap: registerMap,
-	  registerPlugin: registerPlugin
+	    barChart: barChart,
+	    columnChart: columnChart,
+	    lineChart: lineChart,
+	    areaChart: areaChart,
+	    bubbleChart: bubbleChart,
+	    scatterChart: scatterChart,
+	    heatmapChart: heatmapChart,
+	    treemapChart: treemapChart,
+	    comboChart: comboChart,
+	    pieChart: pieChart,
+	    mapChart: mapChart,
+	    radialChart: radialChart,
+	    boxplotChart: boxplotChart,
+	    bulletChart: bulletChart,
+	    registerTheme: registerTheme,
+	    registerMap: registerMap,
+	    registerPlugin: registerPlugin
 	};
 
 /***/ }),
@@ -14022,12 +14040,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var charts = {}; /**
-	                  * @fileoverview  Chart factory play role register chart.
-	                  *                Also, you can get chart from this factory.
-	                  * @author NHN.
-	                  *         FE Development Lab <dl_javascript@nhn.com>
-	                  */
+	var charts = {}; /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview  Chart factory play role register chart.
+	 *                Also, you can get chart from this factory.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	exports['default'] = {
 	    /**
@@ -15501,11 +15521,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @fileoverview Bar chart.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author NHN.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* eslint-disable complexity */
+	/**
+	 * @fileoverview Bar chart.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	/** Class representing a point. */
 	var BarChart = function (_ChartBase) {
@@ -15701,11 +15722,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-	                                                                                                                                                           * @fileoverview ChartBase
-	                                                                                                                                                           * @author NHN.
-	                                                                                                                                                           *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                           */
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview ChartBase
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var GA_TRACKING_ID = 'UA-129983528-1';
 	
@@ -15834,7 +15857,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            indexes: {
 	                groupIndex: groupIndex,
 	                index: index
-	            } }, shouldSelect);
+	            }
+	        }, shouldSelect);
 	    };
 	
 	    /**
@@ -18252,11 +18276,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-	                                                                                                                                                           * @fileoverview Plot component.
-	                                                                                                                                                           * @author NHN.
-	                                                                                                                                                           *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                           */
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview Plot component.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var Plot = function () {
 	    /**
@@ -29826,11 +29852,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-	                                                                                                                                                           * @fileoverview Series base component.
-	                                                                                                                                                           * @author NHN.
-	                                                                                                                                                           *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                           */
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* eslint-disable linebreak-style */
+	/* eslint-disable complexity */
+	/**
+	 * @fileoverview Series base component.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	var LABEL_FADE_IN_DURATION = 600;
 	var browser = _tuiCodeSnippet2['default'].browser;
@@ -41967,11 +41995,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-	                                                                                                                                                           * @fileoverview Bounds model.
-	                                                                                                                                                           * @author NHN.
-	                                                                                                                                                           *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                           */
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /* eslint-disable complexity */
+	/* eslint-disable prefer-template */
+	/* eslint-disable no-console */
+	/**
+	 * @fileoverview Bounds model.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	
 	var browser = _tuiCodeSnippet2['default'].browser;
@@ -42254,7 +42285,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var labelTheme = this.theme.legend.label;
 	        var chartWidth = this.getDimension('chart').width;
 	        var legendDimension = _legendCalculator2['default'].calculate(legendOptions, labelTheme, legendLabels, chartWidth);
-	
+	        console.log('SENDING LEGEND CALCULATION COMMAND ' + legendOptions.width);
 	        this._registerDimension('legend', legendDimension);
 	    };
 	
@@ -43220,6 +43251,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Calculator for dimension of legend.
 	 * @module legendCalculator
 	 * @private */
+	/* eslint-disable no-console */
 	/**
 	 * @fileoverview Calculator for dimension of legend.
 	 * @author NHN.
@@ -43439,6 +43471,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @param {Array.<string>} legendLabels - labels for legend
 	     * @param {number} checkboxWidth - width for checkbox
 	     * @param {?number} [maxWidth] - user option legend maxWidth
+	     * @param {?number} [Width] - user option for actual legend width and overrides calculations
 	     * @returns {{width: (number)}}
 	     * @private
 	     */
@@ -43461,13 +43494,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    /**
 	     * Calculate legend dimension.
-	     * @param {{showCheckbox: boolean, visible: boolean, align: string}} options - options for legend
+	     * @param {{showCheckbox: boolean, visible: boolean, align: string, width: number}} options - options for legend
 	     * @param {{fontSize: number, fontFamily: number}} labelTheme - label theme for legend
 	     * @param {Array.<string>} legendLabels - labels for legend
 	     * @param {number} chartWidth chart width
 	     * @returns {{width: number, height: number}}
 	     */
 	    calculate: function calculate(options, labelTheme, legendLabels, chartWidth) {
+	        // console.log('CALCULATING LEGEND WIDTH');
 	        var checkboxWidth = options.showCheckbox === false ? 0 : LEGEND_CHECKBOX_SIZE + LEGEND_LABEL_LEFT_PADDING;
 	        var maxWidth = options.maxWidth;
 	
@@ -43477,9 +43511,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	            dimension.width = 0;
 	        } else if (_predicate2['default'].isHorizontalLegend(options.align)) {
 	            dimension = this._makeHorizontalDimension(labelTheme, legendLabels, chartWidth, checkboxWidth, maxWidth);
+	        } else if (options.width && options.width > 0) {
+	            // console.log('WIDTH SET');
+	            dimension.height = 0;
+	            dimension.width = options.width;
 	        } else {
+	            // console.log('NO WIDTH SET');
 	            dimension = this._makeVerticalDimension(labelTheme, legendLabels, checkboxWidth, maxWidth);
 	        }
+	        // console.log(`LEGEND WIDTH: ${dimension.width}`);
 	
 	        return dimension;
 	    }
@@ -45594,11 +45634,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @fileoverview Column chart.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author NHN.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* eslint-disable linebreak-style */
+	/**
+	 * @fileoverview Column chart.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	/** Class representing a point. */
 	var ColumnChart = function (_ChartBase) {
@@ -45606,6 +45647,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    /**
 	     * Column chart.
+	     // eslint-disable-next-line linebreak-style
 	     * @constructs ColumnChart
 	     * @extends ChartBase
 	     * @mixes axisTypeMixer
@@ -46654,11 +46696,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @fileoverview Column and Line Combo chart.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @author NHN.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *         FE Development Lab <dl_javascript@nhn.com>
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* eslint-disable linebreak-style */
+	/**
+	 * @fileoverview Column and Line Combo chart.
+	 * @author NHN.
+	 *         FE Development Lab <dl_javascript@nhn.com>
+	 */
 	
 	/** Class representing a point. */
 	var ColumnLineComboChart = function (_ChartBase) {

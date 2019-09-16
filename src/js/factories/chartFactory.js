@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /**
  * @fileoverview  Chart factory play role register chart.
  *                Also, you can get chart from this factory.

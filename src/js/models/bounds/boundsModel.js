@@ -1,3 +1,6 @@
+/* eslint-disable complexity */
+/* eslint-disable prefer-template */
+/* eslint-disable no-console */
 /**
  * @fileoverview Bounds model.
  * @author NHN.
@@ -270,7 +273,7 @@ class BoundsModel {
         const labelTheme = this.theme.legend.label;
         const chartWidth = this.getDimension('chart').width;
         const legendDimension = legendCalculator.calculate(legendOptions, labelTheme, legendLabels, chartWidth);
-
+        console.log('SENDING LEGEND CALCULATION COMMAND ' + legendOptions.width);
         this._registerDimension('legend', legendDimension);
     }
 

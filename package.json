@@ -8,6 +8,7 @@
   "scripts": {
     "serve": "webpack-dev-server --inline --hot -d",
     "serve:ie8": "webpack-dev-server -d",
+    "build": "npm run deploy:all && npm run deploy:babelpolyfill && npm run deploy:nodepth",
     "deploy": "npm run deploy:all && npm run deploy:babelpolyfill && npm run deploy:nodepth && cp -R ./maps ./dist && node tsBannerGenerator.js",
     "deploy:nodepth": "webpack --production --nodepth && webpack --production --nodepth --minify",
     "deploy:all": "webpack --production --alldepth && webpack --production --alldepth --minify",
@@ -22,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.chart"
+    "url": "https://github.com/spevilgenius/tui.chart"
   },
   "keywords": [
     "nhnent",

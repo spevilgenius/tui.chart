@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * @fileoverview Raphael render plugin.
  * @author NHN.

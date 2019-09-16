@@ -19,6 +19,7 @@ module.exports = {
       'indent': [2, 4, {SwitchCase: 1, ignoreComments: false, ImportDeclaration: 1, flatTernaryExpressions: false}],
       'prefer-destructuring': ['error', {
           VariableDeclarator: {array: true, object: true}
-      }]
+      }],
+      'complexity': 'off'
   }
 };

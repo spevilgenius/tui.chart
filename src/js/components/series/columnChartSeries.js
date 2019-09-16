@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /**
  * @fileoverview Column chart series component.
  * @author NHN.

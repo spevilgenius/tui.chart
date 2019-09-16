@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * @fileoverview Column chart.
  * @author NHN.
@@ -12,6 +13,7 @@ import rawDataHandler from '../models/data/rawDataHandler';
 class ColumnChart extends ChartBase {
     /**
      * Column chart.
+     // eslint-disable-next-line linebreak-style
      * @constructs ColumnChart
      * @extends ChartBase
      * @mixes axisTypeMixer

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * @fileoverview Util for rendering.
  * @author NHN.

@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /**
  * @fileoverview RaphaelLineTypeBase is base class for line type renderer.
  * @author NHN.
@@ -1003,14 +1005,14 @@ class RaphaelLineTypeBase {
      * @ignore
      * @abstract
      */
-    resetSeriesOrder() {}
+    resetSeriesOrder() { }
 
     /**
      * @param {SVGElement | {area: {SVGElement}, line: {SVGElement}, startLine: {SVGElement}}} lineType - line or area graph
      * @param {Array.<SVGElement>} dots - dot type element
      * @abstract
      */
-    moveSeriesToFront() {}
+    moveSeriesToFront() { }
 }
 
 /**

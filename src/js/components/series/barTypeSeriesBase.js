@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /**
  * @fileoverview BarTypeSeriesBase is base class for bar type series.
  * @author NHN.
